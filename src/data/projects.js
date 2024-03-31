@@ -1,6 +1,7 @@
 import project1 from "../Assets/project1.png";
 import project2 from "../Assets/project2.png";
 import project3 from "../Assets/project3.png";
+import project4 from "../Assets/project4.png";
 
 const PROJECTS = [
     {
@@ -23,6 +24,13 @@ const PROJECTS = [
         description: "Mini Calculator: Modern tool for daily math needs, with sleek design & intuitive UI.",
         link: "https://imadjaha.github.io/calculator/",
         image: project3
+    },
+    {
+        id: 4,
+        title: "Tic Tac Toe",
+        description: "Tic Tac Toe reimagined: Next.js React app with immersive gameplay and polished design.",
+        link: "https://imadjaha.github.io/tic-tac-toe-ReactJs_NextJs/",
+        image: project4
     }
 ]
 
