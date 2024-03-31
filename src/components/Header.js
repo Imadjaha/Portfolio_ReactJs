@@ -12,9 +12,10 @@ const Header = () => {
   return (
     <div>
       <div>
+      
         <h2 style={style}>
           <Link to="/" style={style}>
-            Home
+            Portfolio
           </Link>
         </h2>
         <h2 style={style}>
@@ -23,6 +24,7 @@ const Header = () => {
           </Link>
         </h2>
       </div>
+      <h3>Welcome to my </h3>
     </div>
   );
 };
