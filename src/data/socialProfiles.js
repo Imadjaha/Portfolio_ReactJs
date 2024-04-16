@@ -18,7 +18,7 @@ const SOCIAL_PROFILES = [
 
     {
         id: 3,
-        link: "https://linkedin.com/in/aimad-b-b97836211",
+        link: "https://www.linkedin.com/in/aimad-bouchouaf",
         image: linkedin
     }
 ];
