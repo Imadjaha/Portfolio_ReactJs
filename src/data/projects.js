@@ -3,6 +3,7 @@ import project2 from "../Assets/project2.png";
 import project3 from "../Assets/project3.png";
 import project4 from "../Assets/project4.png";
 import project5 from "../Assets/project5.png";
+import project6 from "../Assets/project6.png";
 const PROJECTS = [
     {
         id: 1,
@@ -38,6 +39,13 @@ const PROJECTS = [
         description: "Get real-time weather information with an easy-to-use interface. Built with ReactJs.",
         link: "https://imadjaha.github.io/Weather-App/",
         image: project5
+    },
+    {
+        id: 6,
+        title: "Function Diagram",
+        description: " Web app for plotting math functions, offering intuitive interface & export options.",
+        link: "https://imadjaha.github.io/Function_Diagram/",
+        image: project6
     }
 ]
 

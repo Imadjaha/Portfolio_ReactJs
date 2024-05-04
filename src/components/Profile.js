@@ -1,6 +1,7 @@
 import React from "react";
 import profilePicture from "../Assets/porfilePic.jpeg";
 
+
 class Profile extends React.Component {
   constructor() {
     super();
@@ -30,19 +31,19 @@ class Profile extends React.Component {
             <p style={{ textAlign: "center" }}>
               As a versatile computer science student, I excel in database
               management, frontend development, and specification handling.
-              Proficient in MySQL, C, C++, PostgreSQL, and OOP. Practical
+              Proficient in MySQL, C, C++, Python, PostgreSQL, and OOP. Practical
               experience at ZWILLING J.A. Henckels LLC enhanced my skills in
               SQL, frontend setup, and data maintenance. Strong in HTML, CSS, ,
               JavaScript and React. Committed to continual learning, I offer
               expertise and adaptability to drive innovation
             </p>
 
-            <button onClick={this.toggle} className="btn">
+            <button onClick={this.toggle} className="btn1">
               Hide
             </button>
           </div>
         ) : (
-          <button onClick={this.toggle} className="btn">
+          <button onClick={this.toggle} className="btn1">
             Show More
           </button>
         )}

@@ -53,7 +53,7 @@ body {
   border-radius: 10px;
 }
 
-.btn {
+.btn1 {
   background-color: teal;
   color: white;
   padding: 12px 30px;
@@ -62,9 +62,11 @@ body {
   margin: 4px 2px;
   opacity: 1;
   transition: 0.9s;
+  border: none;
+  border-radius: 10px;
 }
 
-.btn:hover {
+.btn1:hover {
     opacity: 0.5;
   }
 
