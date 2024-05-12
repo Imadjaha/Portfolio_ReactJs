@@ -6,7 +6,7 @@ import "../index.css";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import Title from "./Title";
-// import LightDarkMode from "./light-dark-mode";
+import LightDarkMode from "./light-dark-mode";
 
 // Functional Component
 // -------------------
@@ -31,7 +31,7 @@ class App extends React.Component{
         
         return(
         <div >
-        
+        {/* <LightDarkMode/> */}
         <div className="row">
         
         <Title/>

@@ -4,6 +4,7 @@ import project3 from "../Assets/project3.png";
 import project4 from "../Assets/project4.png";
 import project5 from "../Assets/project5.png";
 import project6 from "../Assets/project6.png";
+import project7 from "../Assets/project7.jpg";
 const PROJECTS = [
     {
         id: 1,
@@ -46,6 +47,13 @@ const PROJECTS = [
         description: " Web app for plotting math functions, offering intuitive interface & export options.",
         link: "https://imadjaha.github.io/Function_Diagram/",
         image: project6
+    },
+    {
+        id: 7,
+        title: "Hangman Game",
+        description: "A classic Hangman game created with ReactJs Vite as platform-agnostic frontend.",
+        link: "https://imadjaha.github.io/Hangman/",
+        image: project7
     }
 ]
 
