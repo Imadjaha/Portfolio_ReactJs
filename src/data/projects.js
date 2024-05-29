@@ -5,6 +5,7 @@ import project4 from "../Assets/project4.png";
 import project5 from "../Assets/project5.png";
 import project6 from "../Assets/project6.png";
 import project7 from "../Assets/project7.jpg";
+import project8 from "../Assets/project8.png";
 const PROJECTS = [
     {
         id: 1,
@@ -54,7 +55,15 @@ const PROJECTS = [
         description: "A classic Hangman game created with ReactJs Vite as platform-agnostic frontend.",
         link: "https://imadjaha.github.io/Hangman/",
         image: project7
+    },
+    {
+        id: 8,
+        title: "Snake Game",
+        description: "A classic Snake game from 19th century. created with Python.",
+        link: "https://github.com/Imadjaha/snake-game",
+        image: project8
     }
+
 ]
 
 export default PROJECTS;
