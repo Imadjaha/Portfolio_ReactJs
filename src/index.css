@@ -106,3 +106,34 @@ body {
   }
 } 
 
+
+.selectedProjects {
+  background-color: teal;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 4px;
+  opacity: 1;
+  transition: 0.9s;
+  border: none;
+  border-radius: 10px;
+}
+
+.projects {
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 4px;
+  opacity: 1;
+  transition: 0.9s;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.projects:hover{
+  opacity: 0.8;
+  background-color: teal;
+}
