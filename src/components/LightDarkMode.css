@@ -1,0 +1,75 @@
+
+
+  .switch{
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 10px;
+    right: 5%;
+    z-index: 10;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: teal;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Add styles for the icons */
+  .slider:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #ffeb3b; /* Yellow color for the sun */
+    box-shadow: 0 0 15px #ffeb3b;
+  }
+  
+  input:checked + .slider:after {
+    left: 34px;
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Background color for the moon */
+    border-radius: 50%;
+    box-shadow: none;
+    background: radial-gradient(circle at 25% 25%, transparent 20%, #121212 20%), 
+                radial-gradient(circle at 75% 75%, #121212 40%, transparent 40%);
+  }
+  

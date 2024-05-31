@@ -133,7 +133,7 @@ body {
   border-radius: 10px;
 }
 
-.projects:hover{
+.projects:hover , .dark-mode .projects:hover{
   opacity: 0.8;
   background-color: teal;
 }
@@ -152,4 +152,24 @@ body {
   /* transition: max-height 4.5s ease-in; */
   opacity: 1;
   transition: max-height 4.5s ease-in, opacity 1.5s ease-in;
+}
+
+
+
+body.dark-mode {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+
+.dark-mode .projects {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #4c4f51;
+  color: white;
+  box-shadow: 0 4px 2px 0 rgba(21, 20, 20, 0.2);
 }

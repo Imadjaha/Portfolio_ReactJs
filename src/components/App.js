@@ -1,51 +1,38 @@
-
 import React from "react";
 import Profile from "./Profile";
-import Qualifications from "./Qualifications"
+import Qualifications from "./Qualifications";
 import "../index.css";
+import "./LightDarkMode.css"; // Import the CSS for the toggle switch
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import Title from "./Title";
-import LightDarkMode from "./light-dark-mode";
-
-// Functional Component
-// -------------------
-// function App(){
-//     const myStyle = {textAlign: "center" , backgroundColor: "yellow"};
-//     return(
-//         <div style={myStyle}>
-//             <p> Hello React</p>
-//             <p> Hello World</p>
-//         </div>
-//     ); 
-// }
+import LightDarkMode from "./LightDarkMode";
+import { DarkModeProvider } from "./DarkModeContext";
 
 // Class Component
-// -------
-
-
-class App extends React.Component{
-
-    
-    render(){
-        
-        return(
-        <div >
-        {/* <LightDarkMode/> */}
-        <div className="row">
-        
-        <Title/>
-       <div className="column"> <Profile/></div>
-         <div className="column"><Qualifications/></div>
+class App extends React.Component {
+  render() {
+    return (
+      <DarkModeProvider>
+        <div>
+          <LightDarkMode />
+          <div className="row">
+            <Title />
+            <div className="column">
+              <Profile />
+            </div>
+            <div className="column">
+              <Qualifications />
+            </div>
+          </div>
+          <hr />
+          <Projects />
+          <hr />
+          <SocialProfiles />
         </div>
-        <hr />
-        <Projects/>
-        <hr />
-        <SocialProfiles/>
-       
-       </div>
-        );
-    }
+      </DarkModeProvider>
+    );
+  }
 }
 
 export default App;
