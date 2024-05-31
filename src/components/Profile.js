@@ -1,5 +1,6 @@
 import React from "react";
 import profilePicture from "../Assets/porfilePic.jpeg";
+import "../index.css";
 
 
 class Profile extends React.Component {
@@ -10,14 +11,11 @@ class Profile extends React.Component {
     this.toggle = this.toggle.bind(this); //   to let toggle acces all objects
   }
   toggle() {
-    // if (this.state.displayBio) {
-    //   // this.state.displayBio = false;
-    //   this.setState({ displayBio: false }); // with this methode render function will be automaticlly called
-    // } else {
-    //   // this.state.displayBio = true;
-    //   this.setState({ displayBio: true });
-    // }
-    this.setState({ displayBio: !this.state.displayBio });
+    // this.setState({ displayBio: !this.state.displayBio });
+
+      this.setState((prevState) => ({
+        displayBio: !prevState.displayBio,
+      }));
   }
   render() {
     return (
@@ -26,30 +24,27 @@ class Profile extends React.Component {
         <h1>Hello There</h1>
         <p>My Name is Aimad Bouchouaf</p>
         <p>Computer Science Student</p>
-        {this.state.displayBio ? (
-          <div>
+      
+          <div className={`text-container ${this.state.displayBio ? "show" : ""}`}>
             <p style={{ textAlign: "center" }}>
               As a versatile computer science student, I excel in database
               management, frontend development, and specification handling.
               Proficient in MySQL, C, C++, Python, PostgreSQL, and OOP. Practical
               experience at ZWILLING J.A. Henckels LLC enhanced my skills in
-              SQL, frontend setup, and data maintenance. Strong in HTML, CSS, ,
+              SQL, frontend setup, and data maintenance. Strong in HTML, CSS,
               JavaScript and React. Committed to continual learning, I offer
               expertise and adaptability to drive innovation
             </p>
-
+            </div>
             <button onClick={this.toggle} className="btn1">
-              Hide
-            </button>
-          </div>
-        ) : (
-          <button onClick={this.toggle} className="btn1">
-            Show More
-          </button>
-        )}
+          {this.state.displayBio ? "Hide" : "Show More"}
+        </button>
+      
       </div>
+     
     );
   }
-}
 
+}
 export default Profile;
+
